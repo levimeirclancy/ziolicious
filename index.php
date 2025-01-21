@@ -25,7 +25,7 @@ elseif (in_array($url_chooser, $post_id_array)):
 elseif ($url_chooser == "about"):
 	include_once('index-about.php');
 elseif ($url_choose == "shop"):
-	include_once('index-about.php');
+	include_once('index-shop.php');
 else:
 	include_once('index-404.php');
 	endif;
