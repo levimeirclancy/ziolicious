@@ -20,6 +20,8 @@ print_r($csv_contents);
 
 if (empty($url_chooser)):
 	include_once('index-home.php');
+elseif (in_array($url_chooser, $post_id_array)):
+	include_once('index-entry.php');
 elseif ($url_chooser == "about"):
 	include_once('index-about.php');
 elseif ($url_choose == "shop"):
