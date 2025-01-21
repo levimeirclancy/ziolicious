@@ -2,6 +2,6 @@
 
 if ($index_temp !== "valid"): exit; endif;
 
-	// 404 design
+// 404 design
 
 ?>
