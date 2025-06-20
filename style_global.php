@@ -148,13 +148,16 @@ $css_array = [
 
 ".album-flex" => [
 	"margin"			=> "35px auto 0",
-	"display"			=> "block",
+//	"display"			=> "block",
 //	"max-width"			=> "1200px",
 //	"text-align"			=> "center",
 //	"vertical-align"		=> "middle",
-	"display"			=> "flex",
-	"flex-wrap"			=> "wrap",
-	"justify-content"		=> "space-between",
+	"display"			=> "grid",
+	"gap"				=> "10px",
+	"grid-template-columns"		=> "masonry",
+	"grid-template-rows"		=> "repeat(3, 230px)",
+//	"flex-wrap"			=> "wrap",
+//	"justify-content"		=> "space-between",
  	],
 
 ".album-flex-item" => [
