@@ -160,10 +160,12 @@ $css_array = [
 	"max-width"			=> "1200px",
 	"text-align"			=> "center",
 	"vertical-align"		=> "middle",
+	"display"			=> "flex",
  	],
 
 ".photo-row-img" => [
 	"width"				=> "auto",
+	"display"			=> "inline-block",
 	"height"			=> "210px",
 	"border-radius"			=> "10px",
 	"border"			=> "0 solid rgba(215,215,215,1)",
@@ -171,27 +173,7 @@ $css_array = [
 	"-moz-box-sizing"		=> "border-box",
 	"-webkit-box-sizing"		=> "border-box",
 	"padding"			=> "0",
-	"display"			=> "inline-block",
 	"margin"			=> "20px",
-	], 
-	
-".photo-row-img-container" => [
-	"width"				=> "200px",
-	"height"			=> "210px",
-	"border-radius"			=> "10px",
-	"border"			=> "0 solid rgba(215,215,215,1)",
-	"box-sizing"			=> "border-box",
-	"-moz-box-sizing"		=> "border-box",
-	"-webkit-box-sizing"		=> "border-box",
-	"padding"			=> "0",
-	"display"			=> "inline-block",
-	"margin"			=> "20px",
-	"text-align"			=> "center",
-	"overflow"			=> "hidden",
-	"background-repeat"		=> "no-repeat",
-	"background-attachment"		=> "fixed",
-	"background-position"		=> "center",
-	"background-size"		=> "cover",
 	], 
 
 ".tag-cloud" => [
