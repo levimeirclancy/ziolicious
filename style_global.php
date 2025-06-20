@@ -156,7 +156,7 @@ $css_array = [
 	"color"				=> "#444",
 	],
 
-".photo-row" => [
+".album-flex" => [
 	"margin"			=> "35px auto 0",
 	"display"			=> "block",
 	"max-width"			=> "1200px",
@@ -167,8 +167,9 @@ $css_array = [
 	"justify-content"		=> "center",
  	],
 
-".photo-row-img" => [
+".album-flex-item" => [
 	"width"				=> "auto",
+	"max-width"			=> "600px",
 	"display"			=> "inline-block",
 	"height"			=> "210px",
 	"border-radius"			=> "10px",
