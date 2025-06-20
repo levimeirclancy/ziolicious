@@ -129,7 +129,6 @@ $css_array = [
 	"background-size:"		=> "cover",
 	],
 
-
 ".body-section-overlay" => [
 	"margin"			=> "10px",
 	"outline"			=> "13px solid rgba(215,215,215,0.5)",
@@ -179,7 +178,7 @@ $css_array = [
 	"background-repeat"		=> "no-repeat",
 	"background-attachment"		=> "fixed",
 	"background-position"		=> "center",
-	"background-size""		=> "cover",
+	"background-size"		=> "cover",
 	], 
 
 ".tag-cloud" => [
