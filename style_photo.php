@@ -14,6 +14,7 @@ $css_array = [
 	"background-attachment"		=> "fixed",
 	"background-position"		=> "center",
 	"background-size"		=> "cover",
+	"overflow"			=> "hidden",
 	],
 
 
@@ -75,9 +76,7 @@ $css_array = [
 
 ".photo-splash-button-container" => [
 	"position"			=> "relative",
-	"top"				=> "-75px",
 	"display"			=> "block",
-	"z-index"			=> "399",
 	"margin"			=> "20px 40px",
 	],
 
