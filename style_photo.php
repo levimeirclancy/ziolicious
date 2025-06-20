@@ -24,7 +24,6 @@ $css_array = [
 	"right"				=> "0",
 	"top"				=> "0",
 	"bottom"			=> "100px",
-	"height"			=> "100%",
 	"padding"			=> "50px 20px 0 0",
 	"display"			=> "flex",
 	"height"			=> "100vh",
