@@ -147,6 +147,7 @@ $css_array = [
 	],
 
 ".section-description" => [
+	"max-width"			=> "250px",
 	"font-size"			=> "1.6em",
 	"color"				=> "#444",
 	],
