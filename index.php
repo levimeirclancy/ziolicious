@@ -29,6 +29,9 @@ elseif (in_array($url_array[0], ['style_global.css', 'style_hashtags.css', 'styl
 	header('Content-type: text/css');
 	echo css_process($css_array);
 	exit;
+elseif ($url_array[0] == "photo"):
+	include_once('index_photo.php');
+	exit;
 elseif ($url_array[0] == "about"):
 	include_once('index_about.php');
 	exit;
