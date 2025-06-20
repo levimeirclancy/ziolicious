@@ -1,7 +1,5 @@
 <?
 
-<?
-
 $css_array = [
 
 ".hashtag-white" => [
