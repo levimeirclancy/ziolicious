@@ -162,6 +162,19 @@ $css_array = [
 	"vertical-align"		=> "middle",
  	],
 
+".photo-row-img" => [
+	"width"				=> "auto",
+	"height"			=> "210px",
+	"border-radius"			=> "10px",
+	"border"			=> "0 solid rgba(215,215,215,1)",
+	"box-sizing"			=> "border-box",
+	"-moz-box-sizing"		=> "border-box",
+	"-webkit-box-sizing"		=> "border-box",
+	"padding"			=> "0",
+	"display"			=> "inline-block",
+	"margin"			=> "20px",
+	], 
+	
 ".photo-row-img-container" => [
 	"width"				=> "200px",
 	"height"			=> "210px",
