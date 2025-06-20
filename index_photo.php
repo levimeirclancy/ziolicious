@@ -10,10 +10,6 @@ $img_url = 'https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=
 
 $html_temp .= html_begin("Ziolicious", [ 'style_hashtags', 'style_global', 'style_transitions', 'style_photo' ]);
 
-$html_temp .= '<div class="body-tagline">Stories in color. Stories in context.</div>';
-
-$html_temp .= '<div class="body-tagline-description">Immersive micro-stories showing whole, unapologetic Jewish life. All content is free for editorial use by Zionist creators. Still confused? <a href="/about/"><span class="link-animation">Learn more</span></a></div>';
-
 $html_temp .= '<main>';
 
 $html_temp .= '<div class="photo-splash-img-background" style="background-image: url(\''.$img_url.'\');">';
