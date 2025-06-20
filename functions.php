@@ -19,7 +19,7 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	$html_temp .= '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download">';
 	
 	foreach ($style_array as $style_include):
-		$html_temp .= '<link rel="stylesheet" type="text/css" href="/'.$style_include.'.css">';
+		$html_temp .= '<link rel="stylesheet" type="text/css" href="https://ziolicious.com/'.$style_include.'.css">';
 		endforeach;
 		
 	$html_temp .= '</head>';
