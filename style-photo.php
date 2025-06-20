@@ -118,9 +118,4 @@ $css_array = [
 	
 ];
  
-$html_output .= css_process($css_array);
-
-?>
-
-
 ?>
