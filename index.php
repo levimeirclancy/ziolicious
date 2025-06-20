@@ -24,7 +24,7 @@ if (empty($url_array[0])):
 	include_once('index-home.php');
 	exit;
 elseif (in_array($url_array[0], ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
-	include_once(str_replace(".css", ".php", $url_chooser));
+	include_once(str_replace(".css", ".php", $url_array[0]));
 	echo css_process($css_array);
 	exit;
 elseif ($url_array[0] == "about"):
