@@ -76,6 +76,7 @@ $css_array = [
 	"margin"			=> "200px auto 20px",
 	"text-align"			=> "center",
 	"Font-size"			=> "3em",
+	"line-height"			=> "2em",
 	"font-family"			=> "'Tilt Warp'",
 	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
 	"-webkit-background-clip"	=> "text",
