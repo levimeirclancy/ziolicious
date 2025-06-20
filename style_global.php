@@ -160,7 +160,6 @@ $css_array = [
 	"display"			=> "flex",
 	"flex-wrap"			=> "wrap",
 	"justify-content"		=> "space-between",
-	"
  	],
 
 ".album-flex-item" => [
