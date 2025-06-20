@@ -3,7 +3,7 @@
 $css_array = [
 
 ":root"	=> [
-	"--bg"				=> "rgb(215,215,215)",
+	"--bg"				=> "rgb(235,235,235)",
 	"--text"			=> "#111",
 	"--accent"			=> "#111",
 	],
@@ -131,9 +131,9 @@ $css_array = [
 
 ".body-section-overlay" => [
 	"margin"			=> "10px",
-	"outline"			=> "13px solid rgba(215,215,215,0.5)",
+	"outline"			=> "13px solid rgba(235,235,235,0.5)",
 	"border-radius"			=> "17px",
-	"background"			=> "linear-gradient(170deg,rgba(215,215,215,0.9) 30%,rgba(215,215,215,0.1) 70%, rgba(215,215,215,0))",
+	"background"			=> "linear-gradient(170deg,rgba(235,235,235,0.9) 30%,rgba(235,235,235,0.1) 70%, rgba(235,235,235,0))",
 	],
 
 ".body-section" => [
@@ -168,7 +168,7 @@ $css_array = [
 	"display"			=> "inline-block",
 	"height"			=> "210px",
 	"border-radius"			=> "10px",
-	"border"			=> "0 solid rgba(215,215,215,1)",
+	"border"			=> "0 solid rgba(235,235,235,1)",
 	"box-sizing"			=> "border-box",
 	"-moz-box-sizing"		=> "border-box",
 	"-webkit-box-sizing"		=> "border-box",
@@ -191,7 +191,7 @@ $css_array = [
 	"text-align"			=> "center",
 	"padding"			=> "2em",
 	"font-size"			=> "0.9em",
-	"background"			=> "rgba(215,215,215,1)",
+	"background"			=> "rgba(235,235,235,1)",
 	"margin"			=> "200px 20px 200px",
 	],
 
