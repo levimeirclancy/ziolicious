@@ -25,21 +25,21 @@ $img_array = [
 	];
 
 // start the flex box
-$html_temp .= '<div class="photo-row">';
+$html_temp .= '<div class="album-flex">';
 
 	//header
-	$html_temp .= '<div class="section-header">';
+	$html_temp .= '<div class="album-flex-item section-header">';
 	$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-telaviv" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">TelAviv</span></a>';
 	$html_temp .= '</div>';
 
 	// description
-	$html_temp .= '<div class="section-description">Color, energy, and calm at the Mediterranean’s edge.</div>';
+	$html_temp .= '<div class="album-flex-item section-description">Color, energy, and calm at the Mediterranean’s edge.</div>';
 
 	// images
-	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[0].'"></a>';
-	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-two" src="'.$img_array[1].'"></a>';
-	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-three" src="'.$img_array[2].'"></a>';
-	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[3].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="album-flex-item photo-row-img-transition-one" src="'.$img_array[0].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="album-flex-item photo-row-img-transition-two" src="'.$img_array[1].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="album-flex-item photo-row-img-transition-three" src="'.$img_array[2].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="album-flex-item photo-row-img-transition-one" src="'.$img_array[3].'"></a>';
 
 	// close the flex box
 	$html_temp .= '</div>';
