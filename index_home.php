@@ -23,19 +23,25 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/3078bc6c-104a-40ac-bfe9-3b3c2ae303a2_rw_1200.jpg?h=9a0e223fff3a1bb2034c5e52e6423d01',
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/60fa597f-a39c-4e23-90a6-fb74a23c61c3_rw_1920.jpg?h=4bf60bd6049725359060e277127fc254',
 	];
-$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
-$html_temp .= '<div class="body-section body-section-overlay">';
+
+// start the flex box
+$html_temp .= '<div class="photo-row">';
+
+	//header
 	$html_temp .= '<div class="section-header">';
 	$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-telaviv" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">TelAviv</span></a>';
 	$html_temp .= '</div>';
-	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
-	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[0].'"></a>';
-		$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-two" src="'.$img_array[1].'"></a>';
-		$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-three" src="'.$img_array[2].'"></a>';
-		$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[3].'"></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '</div>';
+
+	// description
+	$html_temp .= '<div class="section-description">Color, energy, and calm at the Mediterranean’s edge.</div>';
+
+	// images
+	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[0].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-two" src="'.$img_array[1].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-three" src="'.$img_array[2].'"></a>';
+	$html_temp .= '<a href="/photo/"><img class="photo-row-img photo-row-img-transition-one" src="'.$img_array[3].'"></a>';
+
+	// close the flex box
 	$html_temp .= '</div>';
 
 // Tag cloud
