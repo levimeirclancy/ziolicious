@@ -2,92 +2,54 @@
 
 if ($index_temp !== "valid"): exit; endif;
 
-// 404 design
+$html_temp = null;
 
+	// 404 design
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ziolicious</title>
+$img_url = 'https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
-  <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Tilt+Warp&family=Righteous&family=Noto+Sans+Mono:wght@100..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Mrs+Sheppards&family=Rubik+Maps&family=Rubik+Maze&family=Rubik+Puddles&family=Rubik+Scribble&family=Secular+One&family=Solitreo&display=swap" rel="stylesheet">
+$html_temp .= html_begin("Ziolicious", [ 'style_hashtags', 'style_global', 'style_transitions', 'style_photo' ]);
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download" />
+$html_temp .= '<div class="body-tagline">Stories in color. Stories in context.</div>';
 
-<link rel="stylesheet" type="text/css" href="style_hashtags.css">
+$html_temp .= '<div class="body-tagline-description">Immersive micro-stories showing whole, unapologetic Jewish life. All content is free for editorial use by Zionist creators. Still confused? <a href="/about/"><span class="link-animation">Learn more</span></a></div>';
 
-<link rel="stylesheet" type="text/css" href="style_global.css">
+$html_temp .= '<main>';
 
-<link rel="stylesheet" type="text/css" href="style_transitions.css">
+$html_temp .= '<div class="photo-splash-img-background" style="background-image: url(\''.$img_url.'\');">';
 
-<link rel="stylesheet" type="text/css" href="style_photo.css">
+$html_temp .= '<div class="photo-splash-img-overlay" style="background:conic-gradient(0,rgba(7,28,76,0.4) 20%,rgba(37,88,147,0.1) 50%, rgba(37,88,147,0.4) 100%);">';
 
-</head>
+$html_temp .= '<div class="photo-splash-img-fadeout"></div>';
 
-<body>
+$html_temp .= '<img class="photo-splash-img" src="'.$img_url.'" alt="">';
 
-<header>
-  <span class="header-logo"><a href="ziolicious_index.html">Ziolicious</a></span>
-  <input class="search-box" type="text" placeholder="&#x1F50D;  Search">
-</header>
+$html_temp .= '</div>';
 
-<main>
+$html_temp .= '</div>';
 
-<div class="photo-splash-img-background" style="background-image: url('https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+$html_temp .= '<div class="photo-splash-button-container">';
 
-<div class="photo-splash-img-overlay" style='background:conic-gradient(0,rgba(7,28,76,0.4) 20%,rgba(37,88,147,0.1) 50%, rgba(37,88,147,0.4) 100%);'>
+$html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>High res</span></div>';
 
-<div class="photo-splash-img-fadeout"></div>
+$html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>Compressed</span></div>';
 
-<img class='photo-splash-img' src='https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
+$html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>Raw</span></div>';
 
+$html_temp .= '</div>';
 
-</div>
+$html_temp .= '<div class="photo-splash-story">';
 
+$html_temp .= '<div class="photo-splash-story-caption" style="background:linear-gradient(135deg, rgba(7,28,76,1), rgba(37,88,147,1)); -webkit-background-clip:text;color:transparent;">';
+  $html_temp .= 'I was walking along the coast of Tel Aviv. And when I looked up, I saw this beautiful flag. The land, the flag, the identity, all felt whole. This has been one of my more successful photos on Unsplash, used by a wide range of people.';
+  $html_temp .= '</div>';
 
-</div>
+$html_temp .= '</div>';
 
-<div class='photo-splash-button-container'>
+$html_temp .= '</main>';
 
-<div class='photo-splash-button'><span class="material-symbols-outlined">download</span><span>High res</span></div>
+$html_temp .= html_end();
 
-<div class='photo-splash-button'><span class="material-symbols-outlined">download</span><span>Compressed</span></div>
-
-<div class='photo-splash-button'><span class="material-symbols-outlined">download</span><span>Raw</span></div>
-
-</div>
-
-<div class='photo-splash-story'>
-
-<div class='photo-splash-story-caption' style='background:linear-gradient(135deg, rgba(7,28,76,1), rgba(37,88,147,1)); -webkit-background-clip:text;color:transparent;'>
-
-I was walking along the coast of Tel Aviv. And when I looked up, I saw this beautiful flag. The land, the flag, the identity, all felt whole. This has been one of my more successful photos on Unsplash, used by a wide range of people.
-
-</div>
-
-</div>
-
-
-
-
-</main>
-
-
-<footer>
-  <a href="#">Instagram</a> |
-  <a href="#">X (Twitter)</a> |
-  <a href="#">Email</a> |
-  <a href="#">Advertise</a>
-  <a href="#">hello@ziolicious.com</a>
-</footer>
-
-</body>
-</html>
-
+echo $html_temp;
 
 ?>
