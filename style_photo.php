@@ -35,7 +35,7 @@ $css_array = [
 	"bottom"			=> "-1px",
 	"width"				=> "100%",
 	"height"			=> "300px",
-	"background"			=> "linear-gradient(0,rgba(215,215,215,1) 5%,rgba(215,215,215,0))",
+	"background"			=> "linear-gradient(0,rgba(235,235,235,1) 5%,rgba(235,235,235,0))",
 	],
 
 
@@ -44,7 +44,7 @@ $css_array = [
 	"margin"			=> "0 auto",
 	"max-height"			=> "75%",
 	"max-width"			=> "75%",
-	"outline"			=> "5px solid rgba(215,215,215,0.3)",
+	"outline"			=> "5px solid rgba(235,235,235,0.3)",
 	"box-shadow"			=> "0 40px 20px -25px rgba(50,50,50,0.3)",
 	"z-index"			=> "99",
 	"transition"			=> "max-width 0.5s ease,  max-height 0.5s ease",
