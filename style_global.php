@@ -85,6 +85,7 @@ $css_array = [
 
 ".body-tagline-description" => [
 	"font-size"			=> "1.3em",
+	"line-height"			=> "1.5em",
 	"opacity"			=> "0.7",
 	"clear: "			=> "both",
 	"display"			=> "inline-block",
