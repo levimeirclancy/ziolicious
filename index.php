@@ -9,20 +9,31 @@ $index_temp = "valid";
 
 // print_r($csv_contents);
 
-if (empty($url_chooser)):
+$url_array = [];
+$url_array_raw = explode("/",$_SERVER['REQUEST_URI']);
+foreach ($url_array_raw as $key_temp => $url_temp):
+	if ($key_temp == 0): continue; endif;
+	if ($key_temp > 4): break; endif;
+	if (empty($url_temp)): continue; endif;
+	$url_array[] = $url_temp;
+	endforach;
+
+if (empty($url_array[0])):
 	include_once('index-home.php');
-if (in_array($url_chooser, ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
+	exit;
+if (in_array($url_array[0], ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
 	include_once(str_replace(".css", ".php", $url_chooser));
 	echo css_process($css_array);
 	exit;
-elseif (in_array($url_chooser, $post_id_array)):
-	include_once('index-entry.php');
-elseif ($url_chooser == "about"):
+elseif ($url_array[0] == "about"):
 	include_once('index-about.php');
-elseif ($url_choose == "shop"):
+	exit;
+elseif ($url_array[0] == "shop"):
 	include_once('index-shop.php');
-else:
-	include_once('index-404.php');
+	exit;
 	endif;
+
+include_once('index-404.php');
+exit;
 
 ?>
