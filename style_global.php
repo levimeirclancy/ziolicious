@@ -35,6 +35,11 @@ $css_array = [
 	"text-align"			=> "center",
 	"padding"			=> "1em 0",
 	"font-family"			=> "'Rubik Maps', sans-serif",
+	"transition"			=> "background 0.4s ease",
+	],
+
+"header:hover" => [
+	"background"			=> "rgba(255, 255, 255, 0.6)",
 	],
 
 ".header-logo" => [
