@@ -16,7 +16,7 @@ $html_temp .= '<div class="photo-splash-img-background" style="background-image:
 
 $html_temp .= '<div class="photo-splash-img-overlay" style="background:conic-gradient(0,rgba(7,28,76,0.4) 20%,rgba(37,88,147,0.1) 50%, rgba(37,88,147,0.4) 100%);">';
 
-$html_temp .= '<div class="photo-splash-img-fadeout"></div>';
+// $html_temp .= '<div class="photo-splash-img-fadeout"></div>';
 
 $html_temp .= '<img class="photo-splash-img" src="'.$img_url.'" alt="">';
 
