@@ -21,21 +21,21 @@ foreach ($url_array_raw as $key_temp => $url_temp):
 include_once('functions.php');
 
 if (empty($url_array[0])):
-	include_once('index-home.php');
+	include_once('index_home.php');
 	exit;
-elseif (in_array($url_array[0], ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
+elseif (in_array($url_array[0], ["style_global.css", "style_hashtags.css", "style_photo.css", "style_transitions.css"])):
 	include_once(str_replace(".css", ".php", $url_array[0]));
 	echo css_process($css_array);
 	exit;
 elseif ($url_array[0] == "about"):
-	include_once('index-about.php');
+	include_once('index_about.php');
 	exit;
 elseif ($url_array[0] == "shop"):
-	include_once('index-shop.php');
+	include_once('index_shop.php');
 	exit;
 	endif;
 
-include_once('index-404.php');
+include_once('index_404.php');
 exit;
 
 ?>
