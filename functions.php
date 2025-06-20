@@ -31,6 +31,19 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	$html_temp .= '<input class="search-box" type="text" placeholder="&#x1F50D;  Search">';
 	$html_temp .= '</header>';
 
-return $html_temp; }
+	return $html_temp; }
+
+
+function css_process ($css_array=[]) {
+	$css_temp = null;
+	foreach ($css_array as $selector_temp => $properties_array):
+		$css_temp .= $selector_temp." {";
+		foreach ($properties_array as $property_temp => $value_temp):
+			$css_temp .= $property_temp.": ".$value_temp.";";
+			endforeach;
+		$css_temp .= "} ";
+		endforeach;
+	return $css_temp;
+	}
 
 ?>
