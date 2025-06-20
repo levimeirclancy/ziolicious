@@ -159,7 +159,8 @@ $css_array = [
 	"vertical-align"		=> "middle",
 	"display"			=> "flex",
 	"flex-wrap"			=> "wrap",
-	"justify-content"		=> "center",
+	"justify-content"		=> "space-between",
+	"
  	],
 
 ".album-flex-item" => [
