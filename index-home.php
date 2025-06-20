@@ -2,41 +2,13 @@
 
 if ($index_temp !== "valid"): exit; endif;
 
+$html_temp = null;
+
 	// 404 design
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ziolicious</title>
+$html_temp .= html_begin("Ziolicious", [ "style-hashtags", "style-global", "style-transitions" ]);
 
-  <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Tilt+Warp&family=Righteous&family=Noto+Sans+Mono:wght@100..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Mrs+Sheppards&family=Rubik+Maps&family=Rubik+Puddles&family=Secular+One&family=Solitreo&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download" />
-
-
-<link rel="stylesheet" type="text/css" href="style_hashtags.css">
-
-<link rel="stylesheet" type="text/css" href="style_global.css">
-
-<link rel="stylesheet" type="text/css" href="style_transitions.css">
-
-</head>
-
-<body>
-
-<header>
-  <span class="header-logo"><a href="ziolicious_index.html">Ziolicious</a></span>
-  <input class="search-box" type="text" placeholder="&#x1F50D;  Search">
-</header>
-
-
-<!--<div class='body-tagline'>Wholly, unapologetically Jewish.</div>-->
-<div class='body-tagline'>Stories in color. Stories in context.</div>
+$html_temp .= '<div class="body-tagline">Stories in color. Stories in context.</div>';
 
 <div class='body-tagline-description'>Immersive micro-stories showing whole, unapologetic Jewish life. All content is free for editorial use by Zionist creators. Still confused? <a href='/about/'><span class='link-animation'>Learn more</span></a></div>
 
@@ -223,5 +195,6 @@ if ($index_temp !== "valid"): exit; endif;
 </body>
 </html>
 
+echo $html_temp;
 
 ?>
