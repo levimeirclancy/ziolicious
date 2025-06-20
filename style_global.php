@@ -163,16 +163,17 @@ $css_array = [
 ".album-flex-item" => [
 	"width"				=> "auto",
 	"max-width"			=> "600px",
-	"display"			=> "inline-block",
 	"height"			=> "auto",
 	"max-height"			=> "250px",
-	"border-radius"			=> "10px",
-	"border"			=> "0 solid rgba(235,235,235,1)",
-	"box-sizing"			=> "border-box",
-	"-moz-box-sizing"		=> "border-box",
-	"-webkit-box-sizing"		=> "border-box",
 	"padding"			=> "0",
-//	"margin"			=> "20px",
+	],
+	
+".album-flex-item-img" => [
+	"width"				=> "auto",
+	"height"			=> "auto",
+	"border-radius"			=> "10px",
+	"padding"			=> "0",
+	"margin"			=> "0",
 	],
 
 ".section-description" => [
