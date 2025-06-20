@@ -29,12 +29,14 @@ $img_array = [
 	];
 
 // start the flex box
-$html_temp .= '<div class="album-flex">';
 
 	//header
 	$html_temp .= '<div class="album-flex-item section-header">';
 	$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-telaviv" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">TelAviv</span></a>';
 	$html_temp .= '</div>';
+
+
+$html_temp .= '<div class="album-flex">';
 
 	// description
 	$html_temp .= '<div class="album-flex-item section-description">Color, energy, and calm at the Mediterranean’s edge.</div>';
