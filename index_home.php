@@ -24,8 +24,8 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/60fa597f-a39c-4e23-90a6-fb74a23c61c3_rw_1920.jpg?h=4bf60bd6049725359060e277127fc254',
 	'https://plus.unsplash.com/premium_photo-1674933213970-e270ae5010e6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRlbCUyMGF2aXZ8ZW58MHx8MHx8fDA%3D',
 	'https://images.unsplash.com/photo-1632700081118-023072acc02a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	'https://unsplash.com/photos/a-man-and-a-woman-standing-next-to-each-other-73zkuUN5fnA',
-	'https://unsplash.com/photos/a-crane-that-is-standing-next-to-a-building-aASWo6WX9iY',
+	'https://images.unsplash.com/photo-1652550118215-16a41e067804?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1652906072015-1b45781732bf?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	];
 
 // start the flex box
