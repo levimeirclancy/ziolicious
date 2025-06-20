@@ -6,7 +6,7 @@ $html_temp = null;
 
 	// 404 design
 
-$html_temp .= html_begin("Ziolicious", [ "style-hashtags", "style-global", "style-transitions" ]);
+$html_temp .= html_begin("Ziolicious", [ "style_hashtags", "style_global", "style_transitions" ]);
 
 $html_temp .= '<div class="body-tagline">Stories in color. Stories in context.</div>';
 
