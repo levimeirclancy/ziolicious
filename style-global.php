@@ -24,94 +24,87 @@ $css_array = [
 	"margin"	=> "0",
 	],
 
-];
+"header" => [
+	"position"	=> "fixed",
+	"top"		=> "0",
+	"width"		=> "100%",
+	"backdrop-filter"		=> "blur(10px)",
+	"background"	=> "rgba(255, 255, 255, 0.5)",
+	"z-index"	=> "999",
+	"display"	=> "block",
+	"text-align"	=> "center",
+	"padding"	=> "1em 0",
+	"font-family"	=> "'Rubik Maps', sans-serif",
+	],
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      backdrop-filter: blur(10px);
-      background: rgba(255, 255, 255, 0.5);
-      z-index: 999;
-      display: block;
-text-align: center;
-      padding: 1em 0;
-      font-family: 'Rubik Maps', sans-serif;
-    }
+".header-logo" => [
+	"display" 	=> "inline-block",
+	"float"		=> "left",
+	"margin"	=> "0 1em",
+	"font-family"	=> "'Tilt Warp'",
+ 	"font-size"	=> "1.8em",
+	"line-height"	=> "1.6em",
+	"font-weight"	=> "bold",
+	"background"	=> "linear-gradient(45deg,rgba(30, 175, 200, 1) 20%, rgba(0, 15, 195, 1))",
+	"-webkit-background-clip"	=> "text",
+	"color"		=> "transparent",
+	],
 
-    .header-logo {
-Display: inline-block;
-float: left;
-margin: 0 1em;
-font-family: 'Tilt Warp';
-      font-size: 1.8em;
-	line-height: 1.6em;
-      font-weight: bold;
-background:linear-gradient(45deg,rgba(30, 175, 200, 1) 20%, rgba(0, 15, 195, 1));
--webkit-background-clip:text;color:transparent;
-    }
+"a" => [
+	"text-decoration"		=> "inherit",
+	"color"		=> "inherit",
+	],
 
-A {text-decoration: inherit;
-color: inherit; }
+".search-box" => [
+	"display"	=> "inline-block",
+	"font-family"	=> "'Helvetica'",
+	"float"		=> "right",
+	"width"		=> "340px",
+	"margin"	=> "0 2em",
+	"padding"	=> "10px 12px",
+	"font-size"	=> "1em",
+	"border-radius"	=> "25px",
+	"border"	=> "2px solid rgba(255,255,255,0.6)",
+	"backdrop-filter"		=> "blur(10px)",
+	"background"	=> "linear-gradient(65deg,rgba(255,255,255,0.6) 15%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.3))",
+	"outline"	=> "none",
+	],
 
+".body-tagline" => [
+	"display"	=> "block",
+	"max-width"	=> "400px",
+	"margin"	=> "200px auto 20px",
+	"text-align"	=> "center",
+	"Font-size"	=> "3em",
+	"font-family"	=> "'Tilt Warp'",
+	"background"	=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
+	"-webkit-background-clip"	=> "text",
+ 	"color"		=> "transparent",
+	],
 
-    .search-box {
-display: inline-block;
-font-family: 'Helvetica';
-float: right;
-width: 340px;
-margin: 0 2em;
-      padding: 10px 12px;
-      font-size: 1em;
-      border-radius: 25px;
-      border: 2px solid rgba(255,255,255,0.6);
-      backdrop-filter: blur(10px);
-background:linear-gradient(65deg,rgba(255,255,255,0.6) 15%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.3));
-      outline: none;
-    }
+".body-tagline-description" => [
+	"font-size"	=> "1.3em",
+	"opacity"	=> "0.7",
+	"clear: "	=> "both",
+	"display"	=> "inline-block",
+	"max-width"	=> "700px",
+	"padding"	=> "0 30px",
+	"margin"	=> "0 auto 80px",
+	"text-align"	=> "center",
+	"letter-spacing"		=> "0",
+	],
 
- 
+".link-animation" => [
+	"display"	=> "inline-block",
+	"Text-decoration"		=> "underline",
+	"Text-decoration-style"		=> "dotted",
+	"text-shadow"	=> "10px 10px 5px rgba(50,50,50,0.05)",
+	], 
 
-.body-tagline {
-Display: block;
-max-width: 400px;
-margin: 200px auto 20px;
-text-align: center;
-Font-size: 3em;
-font-family: 'Tilt Warp';
-
-
-background:linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8));
--webkit-background-clip:text;color:transparent;
-
-
-} 
-
-
-.body-tagline-description {
-font-size: 1.3em;
-Opacity: 0.7;
-clear: both;
-display: inline-block;
-max-width: 700px;
-Padding: 0 30px;
-margin: 0 auto 80px;
-text-align: center;
-letter-spacing: 0;
-}
-
-.link-animation {
-display: inline-block;
-Text-decoration: underline;
-Text-decoration-style: dotted;
-text-shadow: 10px 10px 5px rgba(50,50,50,0.05);
-} 
-
-
-main {
-padding: 0;
-margin: 0;
-} 
+"main" => [
+	"padding"	=> "0",
+	"margin"	=> "0",
+	], 
 
 .body-sections {
 display: block;
@@ -259,6 +252,8 @@ A, a:visited {
 color: inherit; 
 }
 
+];
+ 
 
 
 ?>
