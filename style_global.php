@@ -146,12 +146,6 @@ $css_array = [
 	"vertical-align"		=> "middle",
 	],
 
-".section-description" => [
-	"max-width"			=> "250px",
-	"font-size"			=> "1.6em",
-	"color"				=> "#444",
-	],
-
 ".album-flex" => [
 	"margin"			=> "35px auto 0",
 	"display"			=> "block",
@@ -175,7 +169,13 @@ $css_array = [
 	"-webkit-box-sizing"		=> "border-box",
 	"padding"			=> "0",
 	"margin"			=> "20px",
-	], 
+	],
+
+".section-description" => [
+	"max-width"			=> "250px",
+	"font-size"			=> "1.6em",
+	"color"				=> "#444",
+	],
 
 ".tag-cloud" => [
 	"font-size"			=> "1.5em",
