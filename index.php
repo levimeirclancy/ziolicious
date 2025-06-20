@@ -20,7 +20,8 @@ foreach ($url_array_raw as $key_temp => $url_temp):
 
 include_once('functions.php');
 
-if (empty($url_array[0])):
+// if (empty($url_array[0])):
+if ($url_array[0] == "testing"):
 	include_once('index_home.php');
 	exit;
 elseif (in_array($url_array[0], ['style_global.css', 'style_hashtags.css', 'style_photo.css', 'style_transitions.css'])):
