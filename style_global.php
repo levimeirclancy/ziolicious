@@ -148,11 +148,6 @@ $css_array = [
 
 ".section-description" => [
 	"font-size"			=> "1.6em",
-	"margin-bottom"			=> "1.4em",
-	"margin-top"			=> "1em",
-	"max-width"			=> "400px",
-	"margin-left"			=> "auto",
-	"margin-right"			=> "auto",
 	"color"				=> "#444",
 	],
 
