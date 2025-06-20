@@ -21,24 +21,15 @@ $css_array = [
 ".photo-splash-img-overlay" => [
 	"backdrop-filter"		=> "blur(40px)",
 	"left"				=> "0",
+	"right"				=> "0",
 	"top"				=> "0",
-	"width"				=> "100%",
+	"bottom"			=> "100px",
 	"height"			=> "100%",
 	"padding"			=> "50px 20px 0 0",
 	"display"			=> "flex",
 	"height"			=> "100vh",
 	"align-items"			=> "center",
 	],
-
-".photo-splash-img-fadeout" => [
-	"position"			=> "absolute",
-	"left"				=> "0",
-	"bottom"			=> "-1px",
-	"width"				=> "100%",
-	"height"			=> "300px",
-	"background"			=> "linear-gradient(0,rgba(235,235,235,1) 5%,rgba(235,235,235,0))",
-	],
-
 
 ".photo-splash-img" => [
 	"border-radius"			=> "10px",
