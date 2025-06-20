@@ -23,17 +23,17 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/3078bc6c-104a-40ac-bfe9-3b3c2ae303a2_rw_1200.jpg?h=9a0e223fff3a1bb2034c5e52e6423d01',
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/60fa597f-a39c-4e23-90a6-fb74a23c61c3_rw_1920.jpg?h=4bf60bd6049725359060e277127fc254',
 	];
-$html_temp .= '<div class="body-section-background" style="background-image: url("'.$img_array[0].'");">';
+$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
 $html_temp .= '<div class="body-section body-section-overlay">';
 	$html_temp .= '<div class="section-header">';
 	$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-telaviv" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">TelAviv</span></a>';
 	$html_temp .= '</div>';
 	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
 	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[0].'");"></div></a>';
-		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[1].'");"></div>';
-      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url("'.$img_array[2].'");"></div>';
-     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url("'.$img_array[3].'");"></div>';
+		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[0].'\');"></div></a>';
+		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[1].'\');"></div>';
+      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url(\''.$img_array[2].'\');"></div>';
+     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url(\''.$img_array[3].'\');"></div>';
 		$html_temp .= '</div>';
 	$html_temp .= '</div>';
 	$html_temp .= '</div>';
@@ -63,7 +63,7 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/88d49c26-0e18-4dde-a8d7-639f651f41e7_rw_1200.jpg?h=1fa631133d6f9c7cfbff286b9ade9a3c',
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
-$html_temp .= '<div class="body-section-background" style="background-image: url("'.$img_array[0].'");">';
+$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
 $html_temp .= '<div class="body-section body-section-overlay">';
 	$html_temp .= '<div class="section-header">';
 		$html_temp .= '<a class="hashtag-link hashtag-link-transition-three hashtag-blackjewish" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">BlackJewish</span></a>';
@@ -71,10 +71,10 @@ $html_temp .= '<div class="body-section body-section-overlay">';
 		$html_temp .= '</div>';
 	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
 	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[0].'");"></div></a>';
-		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[1].'");"></div>';
-      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url("'.$img_array[2].'");"></div>';
-     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url("'.$img_array[3].'");"></div>';
+		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[0].'\');"></div></a>';
+		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[1].'\');"></div>';
+      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url(\''.$img_array[2].'\');"></div>';
+     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url(\''.$img_array[3].'\');"></div>';
 		$html_temp .= '</div>';
 	$html_temp .= '</div>';
 	$html_temp .= '</div>';
@@ -107,7 +107,7 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
 	
-$html_temp .= '<div class="body-section-background" style="background-image: url("'.$img_array[0].'");">';
+$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
 $html_temp .= '<div class="body-section body-section-overlay">';
 	$html_temp .= '<div class="section-header">';
 		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-jerusalem" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">Jerusalem</span></a>';
@@ -115,10 +115,10 @@ $html_temp .= '<div class="body-section body-section-overlay">';
 		$html_temp .= '</div>';
 	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
 	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[0].'");"></div></a>';
-		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url("'.$img_array[1].'");"></div>';
-      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url("'.$img_array[2].'");"></div>';
-     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url("'.$img_array[3].'");"></div>';
+		$html_temp .= '<a href="ziolicious_photo.html"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[0].'\');"></div></a>';
+		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[1].'\');"></div>';
+      		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url(\''.$img_array[2].'\');"></div>';
+     		$html_temp .= '<div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url(\''.$img_array[3].'\');"></div>';
 		$html_temp .= '</div>';
 	$html_temp .= '</div>';
 	$html_temp .= '</div>';
