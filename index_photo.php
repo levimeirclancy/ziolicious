@@ -13,25 +13,15 @@ $html_temp .= html_begin("Ziolicious", [ 'style_hashtags', 'style_global', 'styl
 $html_temp .= '<main>';
 
 $html_temp .= '<div class="photo-splash-img-background" style="background-image: url(\''.$img_url.'\');">';
-
 $html_temp .= '<div class="photo-splash-img-overlay" style="background:conic-gradient(0,rgba(7,28,76,0.4) 20%,rgba(37,88,147,0.1) 50%, rgba(37,88,147,0.4) 100%);">';
-
-// $html_temp .= '<div class="photo-splash-img-fadeout"></div>';
-
 $html_temp .= '<img class="photo-splash-img" src="'.$img_url.'" alt="">';
-
 $html_temp .= '</div>';
-
 $html_temp .= '</div>';
 
 $html_temp .= '<div class="photo-splash-button-container">';
-
 $html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>High res</span></div>';
-
 $html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>Compressed</span></div>';
-
 $html_temp .= '<div class="photo-splash-button"><span class="material-symbols-outlined">download</span><span>Raw</span></div>';
-
 $html_temp .= '</div>';
 
 $html_temp .= '<div class="photo-splash-story">';
