@@ -21,7 +21,7 @@ foreach ($url_array_raw as $key_temp => $url_temp):
 if (empty($url_array[0])):
 	include_once('index-home.php');
 	exit;
-if (in_array($url_array[0], ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
+elseif (in_array($url_array[0], ["style-global.css", "style-hashtags.css", "style-photo.css", "style-transitions.css"])):
 	include_once(str_replace(".css", ".php", $url_chooser));
 	echo css_process($css_array);
 	exit;
