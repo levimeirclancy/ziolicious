@@ -161,6 +161,7 @@ $css_array = [
 	"text-align"			=> "center",
 	"vertical-align"		=> "middle",
 	"display"			=> "flex",
+	"flex-wrap"			=> "wrap",
  	],
 
 ".photo-row-img" => [
