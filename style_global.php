@@ -154,21 +154,22 @@ $css_array = [
 	"vertical-align"		=> "middle",
 	"display"			=> "flex",
 	"flex-wrap"			=> "wrap",
-	"justify-content"		=> "space-between",
+	"justify-content"		=> "space-evenly",
  	],
 
 ".album-flex-item" => [
 	"width"				=> "auto",
 	"max-width"			=> "600px",
 	"display"			=> "inline-block",
-	"height"			=> "210px",
+	"height"			=> "auto",
+	"max-height"			=> "250px",
 	"border-radius"			=> "10px",
 	"border"			=> "0 solid rgba(235,235,235,1)",
 	"box-sizing"			=> "border-box",
 	"-moz-box-sizing"		=> "border-box",
 	"-webkit-box-sizing"		=> "border-box",
 	"padding"			=> "0",
-	"margin"			=> "20px",
+//	"margin"			=> "20px",
 	],
 
 ".section-description" => [
