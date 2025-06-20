@@ -34,6 +34,20 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	return $html_temp; }
 
 
+function html_end() {
+	$html_temp = null;
+	$html_temp .= '<footer>';
+		$html_temp .= '<a href="#">Instagram</a>';
+		$html_temp .= '<a href="#">X (Twitter)</a>';
+		$html_temp .= '<a href="#">Email</a>';
+	 	$html_temp .= '<a href="#">Advertise</a>';
+	 	$html_temp .= '<a href="#">hello@ziolicious.com</a>';
+		$html_temp .= '</footer>';
+	$html_temp .= '</body>';
+	$html_temp .= '</html>';
+	return $html_temp;
+	}
+
 function css_process ($css_array=[]) {
 	$css_temp = null;
 	foreach ($css_array as $selector_temp => $properties_array):
