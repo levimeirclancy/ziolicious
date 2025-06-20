@@ -43,7 +43,7 @@ $html_temp .= '<div class="album-flex">';
 
 	// images
 	foreach ($img_array as $img_temp):
-		$html_temp .= '<div album-flex-item><a href="/photo/"><img class="photo-row-img-transition-one" src="'.$img_temp.'"></a></div>';
+		$html_temp .= '<div class="album-flex-item"><a href="/photo/"><img class="photo-row-img-transition-one" src="'.$img_temp.'"></a></div>';
 		endforeach;
 
 	// close the flex box
