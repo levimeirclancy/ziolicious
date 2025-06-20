@@ -161,16 +161,14 @@ $css_array = [
  	],
 
 ".album-flex-item" => [
-	"width"				=> "auto",
-	"max-width"			=> "600px",
-	"height"			=> "auto",
-	"max-height"			=> "250px",
 	"padding"			=> "0",
 	],
 	
 ".album-flex-item-img" => [
 	"width"				=> "auto",
+	"max-width"			=> "600px",
 	"height"			=> "auto",
+	"max-height"			=> "250px",
 	"border-radius"			=> "10px",
 	"padding"			=> "0",
 	"margin"			=> "0",
