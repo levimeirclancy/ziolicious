@@ -18,6 +18,8 @@ foreach ($url_array_raw as $key_temp => $url_temp):
 	$url_array[] = $url_temp;
 	endforeach;
 
+include_once('functions.php');
+
 if (empty($url_array[0])):
 	include_once('index-home.php');
 	exit;
