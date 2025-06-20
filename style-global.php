@@ -2,28 +2,29 @@
 
 $css_array = [
 
-  ":root" => [
-    "--bg" => "rgb(215,215,215)",
-		"--text"	=> "#111",
-		"--accent" => "#111",
+":root"	=> [
+	"--bg"		=> "rgb(215,215,215)",
+	"--text"	=> "#111",
+	"--accent"	=> "#111",
 	],
 
-	];
-	    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+"*" => [
+	"margin"	=> "0",
+	"padding"	=> "0",
+	"box-sizing"	=> "border-box",
+	],
 
-    body {
-text-align: center;
-      font-family: 'Georgia', serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 0 0 0 0;
-margin: 0;
-    }
+"body" => [
+	"text-align" 	=> "center",
+	"font-family" 	=> "'Georgia', serif",
+	"background"	=> "var(--bg)",
+	"color"		=> "var(--text)",
+	"line-height"	=> "1.6",
+	"padding"	=> "0 0 0 0",
+	"margin"	=> "0",
+	],
+
+];
 
     header {
       position: fixed;
