@@ -23,8 +23,9 @@ include_once('functions.php');
 if (empty($url_array[0])):
 	include_once('index_home.php');
 	exit;
-elseif (in_array($url_array[0], ["style_global.css", "style_hashtags.css", "style_photo.css", "style_transitions.css"])):
-	include_once(str_replace(".css", ".php", $url_array[0]));
+elseif (in_array($url_array[0], ['style_global.css', 'style_hashtags.css', 'style_photo.css', 'style_transitions.css'])):
+	include_once(str_replace('.css', '.php', $url_array[0]));
+	header('Content-type: text/css');
 	echo css_process($css_array);
 	exit;
 elseif ($url_array[0] == "about"):
