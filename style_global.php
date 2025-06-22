@@ -85,7 +85,7 @@ $css_array = [
 ".body-tagline-description" => [
 	"font-size"			=> "1.3em",
 	"opacity"			=> "0.7",
-	"clear: "			=> "both",
+	"clear"				=> "both",
 	"display"			=> "inline-block",
 	"max-width"			=> "700px",
 	"padding"			=> "0 30px",
@@ -126,7 +126,7 @@ $css_array = [
 	"background-repeat"		=> "no-repeat",
 	"background-attachment"		=> "fixed",
 	"background-position"		=> "center",
-	"background-size:"		=> "cover",
+	"background-size"		=> "cover",
 	],
 
 ".body-section-overlay" => [
