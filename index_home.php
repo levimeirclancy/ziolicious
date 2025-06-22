@@ -25,10 +25,14 @@ function splash_album($hashtag_header, $hashtag_description, $img_array) {
 		$html_temp .= '</div>';
 		$html_temp .= '<p class="section-description">'.$hashtag_description.'</p>';
 		$html_temp .= '<div class="photo-row">';
-			$html_temp .= '<a href="/photo/"><img src='.$img_array[0].'" class="photo-row-img photo-row-img-transition-one"></a>';
-			$html_temp .= '<a href="/photo/"><img src='.$img_array[1].'" class="photo-row-img photo-row-img-transition-two"></a>';
-			$html_temp .= '<a href="/photo/"><img src='.$img_array[2].'" class="photo-row-img photo-row-img-transition-three"></a>';
-			$html_temp .= '<a href="/photo/"><img src='.$img_array[3].'" class="photo-row-img photo-row-img-transition-one"></a>';
+			$transition_array = [
+				"photo-row-img-transition-one",
+				"photo-row-img-transition-two",
+				"photo-row-img-transition-three",
+				];
+			foreach ($img_array as $img_temp):
+				$html_temp .= '<a href="/photo/"><img src='.$img_temp.'" class="photo-row-img '.$transition_array[array_rand($transition_array)].'"></a>';
+				endforeach;
 			$html_temp .= '</div>';
 		$html_temp .= '</div>';
 		$html_temp .= '</div>';
