@@ -1,5 +1,11 @@
 <?
 
+$heading_font = "'Georgia', serif";
+$body_font = "'Tilt Warp'";
+$search_font = "'Helvetica'";
+$hashtag_heading_font = "Monoton, sans-serif";
+$hashtag_general_font = "'Rubik Mono One', sans-serif";
+
 $css_array = [
 
 ":root"	=> [
@@ -16,7 +22,7 @@ $css_array = [
 
 "body" => [
 	"text-align" 			=> "center",
-	"font-family" 			=> "'Georgia', serif",
+	"font-family" 			=> $body_font,
 	"background"			=> "var(--bg)",
 	"color"				=> "var(--text)",
 	"line-height"			=> "1.6",
@@ -40,7 +46,7 @@ $css_array = [
 	"display"			=> "inline-block",
 	"float"				=> "left",
 	"margin"			=> "0 1em",
-	"font-family"			=> "'Tilt Warp'",
+	"font-family"			=> $heading_font,
  	"font-size"			=> "1.8em",
 	"line-height"			=> "1.6em",
 	"font-weight"			=> "bold",
@@ -56,7 +62,7 @@ $css_array = [
 
 ".search-box" => [
 	"display"			=> "inline-block",
-	"font-family"			=> "'Helvetica'",
+	"font-family"			=> $search_font,
 	"float"				=> "right",
 	"width"				=> "340px",
 	"margin"			=> "0 2em",
@@ -75,7 +81,7 @@ $css_array = [
 	"margin"			=> "200px auto 20px",
 	"text-align"			=> "center",
 	"Font-size"			=> "3em",
-	"font-family"			=> "'Tilt Warp'",
+	"font-family"			=> $headng_font,
 	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
 	"-webkit-background-clip"	=> "text",
  	"color"				=> "transparent",
@@ -233,7 +239,7 @@ $css_array = [
 	"text-decoration"		=> "none",
 	"color"				=> "inherit",
 	"font-size"			=> "60%",
-	"font-family"			=> "'Major Mono Display', 'Noto Sans Mono', 'Verdana'",
+	"font-family"			=> $heading_font,
 	"font-weight"			=> "700",
 	"transform"			=> "translateY(-10px) rotate(5deg)",
 	],
@@ -250,11 +256,11 @@ $css_array = [
 	],
 
 ".tag-cloud .hashtag-text" => [
-	"font-family"			=> "'Rubik Mono One', sans-serif",
+	"font-family"			=> $hashtag_general_font,
 	],
 
 ".section-header .hashtag-text" => [
-	"font-family"			=> "Monoton, 'Noto Sans Mono', sans-serif",
+	"font-family"			=> $hashtag_heading_font,
 	],
 
 ".section-header" => [
