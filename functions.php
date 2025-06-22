@@ -18,9 +18,8 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	$html_temp .= '?family=Monoton';
 	$html_temp .= '&family=Tilt+Warp';
 	$html_temp .= '&family=Rubik+Mono+One';
-	$html_temp .= 'family=Rubik+Maps';
-	$html_temp .= '&family=Secular+One';
-	$html_temp .= '&family=Solitreo';
+//	$html_temp .= '&family=Secular+One';
+//	$html_temp .= '&family=Solitreo';
 	$html_temp .= '&display=swap" rel="stylesheet">';
 	
 	$html_temp .= '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download">';
