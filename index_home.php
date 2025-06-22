@@ -16,45 +16,46 @@ $html_temp .= '<main>';
 
 $html_temp .= '<div class="body-sections">';
 
-// Album
-$img_array = [
-	'https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	'https://images.unsplash.com/photo-1652636142954-93119fd21a10?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	'https://plus.unsplash.com/premium_photo-1674933213970-e270ae5010e6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	'https://images.unsplash.com/photo-1708843474366-7af1a05d76a3?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	];
-$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
-$html_temp .= '<div class="body-section body-section-overlay">';
-	$html_temp .= '<div class="section-header">';
-	$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-telaviv" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">TelAviv</span></a>';
-	$html_temp .= '</div>';
-	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
-	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="/photo/"><img src='.$img_array[0].'" class="photo-row-img photo-row-img-transition-one"></a>';
-		$html_temp .= '<a href="/photo/"><img src='.$img_array[1].'" class="photo-row-img photo-row-img-transition-two"></a>';
-		$html_temp .= '<a href="/photo/"><img src='.$img_array[2].'" class="photo-row-img photo-row-img-transition-three"></a>';
-		$html_temp .= '<a href="/photo/"><img src='.$img_array[3].'" class="photo-row-img photo-row-img-transition-one"></a>';
+function splash_album($hashtag_header, $hashtag_description, $img_array) {
+	$html_temp = null;
+	$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
+	$html_temp .= '<div class="body-section body-section-overlay">';
+		$html_temp .= '<div class="section-header">';
+		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-'.strtolower($hashtag_header).'" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">'.$hashtag_header.'</span></a>';
 		$html_temp .= '</div>';
-	$html_temp .= '</div>';
-	$html_temp .= '</div>';
+		$html_temp .= '<p class="section-description">'.$hashtag_description.'</p>';
+		$html_temp .= '<div class="photo-row">';
+			$html_temp .= '<a href="/photo/"><img src='.$img_array[0].'" class="photo-row-img photo-row-img-transition-one"></a>';
+			$html_temp .= '<a href="/photo/"><img src='.$img_array[1].'" class="photo-row-img photo-row-img-transition-two"></a>';
+			$html_temp .= '<a href="/photo/"><img src='.$img_array[2].'" class="photo-row-img photo-row-img-transition-three"></a>';
+			$html_temp .= '<a href="/photo/"><img src='.$img_array[3].'" class="photo-row-img photo-row-img-transition-one"></a>';
+			$html_temp .= '</div>';
+		$html_temp .= '</div>';
+		$html_temp .= '</div>';
+	
+	return $html_temp;
+	}
+
+function splash_cloud($hashtag_header, $hashtag_array) {
+	$html_temp .= '<div class="body-section-background">';
+	$html_temp = null;
+	$html_temp .= '<div class="body-section">';
+		$html_temp .= '<div class="section-header">';
+			$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-'.strtolower($hashtag_header).'" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">'.$hashtag_header.'</span></a>';
+			$html_temp .= '</div>';
+		$html_temp .= '<div class="tag-cloud">';
+			foreach ($hashtag_array as $hashtag_temp):
+				$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-'.strtolower($hashtag_temp).'" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">'.$hashtag_temp.'</span></a>';
+				endforeach;
+			$html_temp .= '</div>';
+		$html_temp .= '</div>';
+		$html_temp .= '</div>';
+	
+	return $html_temp;
+	}
 
 // Tag cloud
-$html_temp .= '<div class="body-section-background hashtag-queeridentity">';
-$html_temp .= '<div class="body-section">';
-	$html_temp .= '<div class="section-header">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">QueerIdentity</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '<div class="tag-cloud">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">NSFW</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">couples</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">families</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">trans</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">nonbinary</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-three hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">advocacy</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">lesbians</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '</div>';
-	$html_temp .= '</div>';
+$html_temp .= splash_cloud ("QueerIdentity", [ "NSFW", "couples", "families", "trans", "nonbinary", "advocacy", "lesbians" ]);
 
 // Album
 $img_array = [
@@ -63,21 +64,7 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/88d49c26-0e18-4dde-a8d7-639f651f41e7_rw_1200.jpg?h=1fa631133d6f9c7cfbff286b9ade9a3c',
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
-$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
-$html_temp .= '<div class="body-section body-section-overlay">';
-	$html_temp .= '<div class="section-header">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-three hashtag-blackjewish" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">BlackJewish</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-families" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">families</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
-	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[0].'\');"></div></a>';
-		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[1].'\');"></div></a>';
-      		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url(\''.$img_array[2].'\');"></div></a>';
-     		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url(\''.$img_array[3].'\');"></div></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '</div>';
-	$html_temp .= '</div>';
+$html_temp .= splash_album ("BlackJewish", "Heritage rooted in millennia of tradition.", $img_array);
   
 // Tag cloud
 $html_temp .= '<div class="body-section-background hashtag-landscapes">';
@@ -106,21 +93,7 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/88d49c26-0e18-4dde-a8d7-639f651f41e7_rw_1200.jpg?h=1fa631133d6f9c7cfbff286b9ade9a3c',
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
-$html_temp .= '<div class="body-section-background" style="background-image: url(\''.$img_array[0].'\');">';
-$html_temp .= '<div class="body-section body-section-overlay">';
-	$html_temp .= '<div class="section-header">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-jerusalem" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">Jerusalem</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-three hashtag-architecture" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">architecture</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '<p class="section-description">Color, energy, and calm at the Mediterranean’s edge.</p>';
-	$html_temp .= '<div class="photo-row">';
-		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[0].'\');"></div></a>';
-		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-one" style="background-image: url(\''.$img_array[1].'\');"></div></a>';
-      		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-two" style="background-image: url(\''.$img_array[2].'\');"></div></a>';
-     		$html_temp .= '<a href="/photo/"><div class="photo-row-img-container photo-row-img-transition-three" style="background-image: url(\''.$img_array[3].'\');"></div></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '</div>';
-	$html_temp .= '</div>';
+$html_temp .= splash_album ("Jerusalem", "Ancient and modern meet.", $img_array);
 
 $html_temp .= '</div>';
 
