@@ -174,7 +174,8 @@ $css_array = [
 	"display"			=> "inline-block",
 	"margin"			=> "20px",
 	], 
-	
+
+// Discontinued
 ".photo-row-img-container" => [
 	"width"				=> "auto",
 	"height"			=> "210px",
