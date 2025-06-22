@@ -138,7 +138,7 @@ $css_array = [
 	"margin"			=> "10px",
 	"outline"			=> "13px solid rgba(235,235,235,0.5)",
 	"border-radius"			=> "17px",
-	"background"			=> "linear-gradient(170deg,rgba(235,235,235,0.9) 30%,rgba(235,235,235,0.1) 70%, rgba(235,235,235,0))",
+	"background"			=> "linear-gradient(170deg,rgba(235,235,235,0.9) 30%,rgba(235,235,235,0.1) 80%, rgba(235,235,235,0.4))",
 	],
 
 ".body-section" => [
