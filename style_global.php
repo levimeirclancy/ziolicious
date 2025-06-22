@@ -240,6 +240,8 @@ $css_array = [
 	"color"				=> "inherit",
 	"font-size"			=> "60%",
 	"font-family"			=> $heading_font,
+	"position"			=> "relative",
+	"bottom"			=> "5px",
 	"font-weight"			=> "700",
 	"transform"			=> "translateY(-10px) rotate(5deg)",
 	],
