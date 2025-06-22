@@ -17,7 +17,7 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	$html_temp .= '<link href="https://fonts.googleapis.com/css2';
 	$html_temp .= '?family=Monoton';
 	$html_temp .= '&family=Tilt+Warp';
-	$html_temp .= '&family=Noto+Sans+Mono:wght@100..900';
+	$html_temp .= '&family=Rubik+Mono+One';
 	$html_temp .= 'family=Rubik+Maps';
 	$html_temp .= '&family=Secular+One';
 	$html_temp .= '&family=Solitreo';
