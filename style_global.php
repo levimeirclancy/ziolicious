@@ -3,7 +3,7 @@
 $css_array = [
 
 ":root"	=> [
-	"--bg"				=> "rgb(235,235,235)",
+	"--bg"				=> "rgb(215,215,215)",
 	"--text"			=> "#111",
 	"--accent"			=> "#111",
 	],
@@ -29,7 +29,7 @@ $css_array = [
 	"top"				=> "0",
 	"width"				=> "100%",
 	"backdrop-filter"		=> "blur(10px)",
-	"background"			=> "linear-gradient(45deg, rgba(255, 255, 255, 0.7) 15%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.6) 100%)",
+	"background"			=> "rgba(255, 255, 255, 0.5)",
 	"z-index"			=> "999",
 	"display"			=> "block",
 	"text-align"			=> "center",
@@ -76,7 +76,6 @@ $css_array = [
 	"margin"			=> "200px auto 20px",
 	"text-align"			=> "center",
 	"Font-size"			=> "3em",
-	"line-height"			=> "2em",
 	"font-family"			=> "'Tilt Warp'",
 	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
 	"-webkit-background-clip"	=> "text",
@@ -85,7 +84,6 @@ $css_array = [
 
 ".body-tagline-description" => [
 	"font-size"			=> "1.3em",
-	"line-height"			=> "2em",
 	"opacity"			=> "0.7",
 	"clear: "			=> "both",
 	"display"			=> "inline-block",
@@ -133,9 +131,9 @@ $css_array = [
 
 ".body-section-overlay" => [
 	"margin"			=> "10px",
-	"outline"			=> "13px solid rgba(235,235,235,0.5)",
+	"outline"			=> "13px solid rgba(215,215,215,0.5)",
 	"border-radius"			=> "17px",
-	"background"			=> "linear-gradient(170deg,rgba(235,235,235,0.9) 30%,rgba(235,235,235,0.1) 70%, rgba(235,235,235,0))",
+	"background"			=> "linear-gradient(170deg,rgba(215,215,215,0.9) 30%,rgba(215,215,215,0.1) 70%, rgba(215,215,215,0))",
 	],
 
 ".body-section" => [
@@ -146,36 +144,55 @@ $css_array = [
 	"vertical-align"		=> "middle",
 	],
 
-".album-flex" => [
-	"margin"			=> "35px auto 0",
-//	"display"			=> "block",
-	"width"				=> "100%",
-//	"text-align"			=> "center",
-//	"vertical-align"		=> "middle",
-	"display"			=> "grid",
-	"gap"				=> "10px",
-	"grid-template-columns"		=> "epeat(auto-fill, minmax(120px, 1fr))",
-	"grid-template-rows"		=> "masonry",
-//	"flex-wrap"			=> "wrap",
-//	"justify-content"		=> "space-between",
- 	],
-
-".album-flex-item" => [
-	"padding"			=> "0",
-	],
-	
-".album-flex-item-img" => [
-	"max-height"			=> "250px",
-	"border-radius"			=> "10px",
-	"padding"			=> "0",
-	"margin"			=> "0",
-	],
-
 ".section-description" => [
-	"max-width"			=> "300px",
 	"font-size"			=> "1.6em",
+	"margin-bottom"			=> "1.4em",
+	"margin-top"			=> "1em",
+	"max-width"			=> "400px",
+	"margin-left"			=> "auto",
+	"margin-right"			=> "auto",
 	"color"				=> "#444",
 	],
+
+".photo-row" => [
+	"margin"			=> "35px auto 0",
+	"display"			=> "block",
+	"max-width"			=> "1200px",
+	"text-align"			=> "center",
+	"vertical-align"		=> "middle",
+ 	],
+
+".photo-row-img" => [
+	"width"				=> "auto",
+	"height"			=> "210px",
+	"border-radius"			=> "10px",
+	"border"			=> "0 solid rgba(215,215,215,1)",
+	"box-sizing"			=> "border-box",
+	"-moz-box-sizing"		=> "border-box",
+	"-webkit-box-sizing"		=> "border-box",
+	"padding"			=> "0",
+	"display"			=> "inline-block",
+	"margin"			=> "20px",
+	], 
+	
+".photo-row-img-container" => [
+	"width"				=> "200px",
+	"height"			=> "210px",
+	"border-radius"			=> "10px",
+	"border"			=> "0 solid rgba(215,215,215,1)",
+	"box-sizing"			=> "border-box",
+	"-moz-box-sizing"		=> "border-box",
+	"-webkit-box-sizing"		=> "border-box",
+	"padding"			=> "0",
+	"display"			=> "inline-block",
+	"margin"			=> "20px",
+	"text-align"			=> "center",
+	"overflow"			=> "hidden",
+	"background-repeat"		=> "no-repeat",
+	"background-attachment"		=> "fixed",
+	"background-position"		=> "center",
+	"background-size"		=> "cover",
+	], 
 
 ".tag-cloud" => [
 	"font-size"			=> "1.5em",
@@ -192,7 +209,7 @@ $css_array = [
 	"text-align"			=> "center",
 	"padding"			=> "2em",
 	"font-size"			=> "0.9em",
-	"background"			=> "rgba(235,235,235,1)",
+	"background"			=> "rgba(215,215,215,1)",
 	"margin"			=> "200px 20px 200px",
 	],
 
