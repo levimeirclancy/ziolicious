@@ -34,7 +34,6 @@ $css_array = [
 	"display"			=> "block",
 	"text-align"			=> "center",
 	"padding"			=> "1em 0",
-	"font-family"			=> "'Rubik Maps', sans-serif",
 	],
 
 ".header-logo" => [
@@ -221,7 +220,6 @@ $css_array = [
 	],
 
 ".hashtag-link" => [
-	"font-family"			=> "'Rubik Maps'",
 	"position"			=> "relative",
 	"display"			=> "inline-block",
 	"text-underline-offset"		=> "0.2em",
@@ -241,7 +239,6 @@ $css_array = [
 	],
 
 ".hashtag-text" => [
-	"font-family"			=> "Monoton, 'Noto Sans Mono', sans-serif",
 	"font-weight"			=> "400",
 	"font-size"			=> "1.3em",
 	"color"				=> "inherit",
@@ -250,6 +247,14 @@ $css_array = [
 	"text-decoration-style"		=> "wavy",
 	"text-decoration-color"		=> "inherit",
 	"cursor"			=> "pointer",
+	],
+
+".tag-cloud .hashtag-text" => [
+	"font-family"			=> "'Rubik Mono One', sans-serif",
+	],
+
+".section-header .hashtag-text" => [
+	"font-family"			=> "Monoton, 'Noto Sans Mono', sans-serif",
 	],
 
 ".section-header" => [
