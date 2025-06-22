@@ -74,10 +74,11 @@ $html_temp .= splash_cloud ("QueerIdentity", [ "NSFW", "couples", "families", "t
 
 // Album
 $img_array = [
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/9bbe2424-dbf5-4232-9aef-d0fa1030a54f_rw_600.jpg?h=f0881407ab26553b4913a01c179a75e3',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/88d49c26-0e18-4dde-a8d7-639f651f41e7_rw_1200.jpg?h=1fa631133d6f9c7cfbff286b9ade9a3c',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
+	'https://images.unsplash.com/photo-1653255565102-5059dcebf0f4?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1620860452851-7231a940c0f4?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://plus.unsplash.com/premium_photo-1708969429051-9354cc6e2463?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1674115904513-b77d8f84642a?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1706725486244-8e4172433f28?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	];
 $html_temp .= splash_album ("BlackJewish", "Heritage rooted in millennia of tradition.", $img_array);
 
