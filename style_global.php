@@ -176,7 +176,7 @@ $css_array = [
 	], 
 	
 ".photo-row-img-container" => [
-	"width"				=> "200px",
+	"width"				=> "auto",
 	"height"			=> "210px",
 	"border-radius"			=> "10px",
 	"border"			=> "0 solid rgba(215,215,215,1)",
