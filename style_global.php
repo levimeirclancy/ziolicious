@@ -1,7 +1,7 @@
 <?
 
-$heading_font = "'Georgia', serif";
-$body_font = "'Tilt Warp'";
+$heading_font = "'Tilt Warp'";
+$body_font = "'Georgia', serif";
 $search_font = "'Helvetica'";
 $hashtag_heading_font = "Monoton, sans-serif";
 $hashtag_general_font = "'Rubik Mono One', sans-serif";
