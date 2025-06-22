@@ -57,9 +57,11 @@ function splash_cloud($hashtag_header, $hashtag_array) {
 // Album
 $img_array = [
 	'https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/97074001-bd9d-46ea-ab00-d0fa3cff5d3d_rw_1200.jpg?h=e11f505c82d0f061611cb397b9ca090f',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/3078bc6c-104a-40ac-bfe9-3b3c2ae303a2_rw_1200.jpg?h=9a0e223fff3a1bb2034c5e52e6423d01',
-	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/60fa597f-a39c-4e23-90a6-fb74a23c61c3_rw_1920.jpg?h=4bf60bd6049725359060e277127fc254',
+	'https://images.unsplash.com/photo-1652636142954-93119fd21a10?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://plus.unsplash.com/premium_photo-1674933004116-5dd4847415e6?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1631596894386-e5265fdf33f5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://plus.unsplash.com/premium_photo-1667547793425-42d6f4fbc69b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1631596894729-4c8d7463bd61?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	];
 $html_temp .= splash_album ("TelAviv", "Color, energy, and calm at the Mediterranean's edge.", $img_array);
 
