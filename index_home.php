@@ -54,6 +54,15 @@ function splash_cloud($hashtag_header, $hashtag_array) {
 	return $html_temp;
 	}
 
+// Album
+$img_array = [
+	'https://images.unsplash.com/photo-1621874098652-168c080d322f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/97074001-bd9d-46ea-ab00-d0fa3cff5d3d_rw_1200.jpg?h=e11f505c82d0f061611cb397b9ca090f',
+	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/3078bc6c-104a-40ac-bfe9-3b3c2ae303a2_rw_1200.jpg?h=9a0e223fff3a1bb2034c5e52e6423d01',
+	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/60fa597f-a39c-4e23-90a6-fb74a23c61c3_rw_1920.jpg?h=4bf60bd6049725359060e277127fc254',
+	];
+$html_temp .= splash_album ("TelAviv", "Color, energy, and calm at the Mediterranean's edge.", $img_array);
+
 // Tag cloud
 $html_temp .= splash_cloud ("QueerIdentity", [ "NSFW", "couples", "families", "trans", "nonbinary", "advocacy", "lesbians" ]);
 
@@ -65,26 +74,9 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
 $html_temp .= splash_album ("BlackJewish", "Heritage rooted in millennia of tradition.", $img_array);
-  
+
 // Tag cloud
-$html_temp .= '<div class="body-section-background hashtag-landscapes">';
-$html_temp .= '<div class="body-section">';
-	$html_temp .= '<div class="section-header">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">landscapes</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '<div class="tag-cloud">';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">beach</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">sunset</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">desert</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-two hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">sky</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">pomegranate</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-three hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">forest</span></a>';
-		$html_temp .= '<a class="hashtag-link hashtag-link-transition-one hashtag-white" href="#"><span class="hashtag-symbol">#</span><span class="hashtag-text">urban</span></a>';
-		$html_temp .= '</div>';
-	$html_temp .= '</div>';
-	$html_temp .= '</div>';
-
-
+$html_temp .= splash_cloud ("landscapes", [ "beach", "sunset", "desert", "sky", "forest", "urban" ]);
 
 // Album
 $img_array = [
@@ -94,6 +86,9 @@ $img_array = [
 	'https://cdn.myportfolio.com/edcae732-6d45-4207-bf20-5f1fad45d9f8/8c15e766-861d-4ffc-85ad-d841942e5a30_rw_1200.jpg?h=37e4c970d08a15ac361a149dc59f3466',
 	];
 $html_temp .= splash_album ("Jerusalem", "Ancient and modern meet.", $img_array);
+
+// Tag cloud
+// $html_temp .= splash_cloud ("SacredSpecies", [ "pomegranate", "date", "fig", "olive", "grape", "barley", "wheat"  ]);
 
 $html_temp .= '</div>';
 
