@@ -85,13 +85,17 @@ $css_array = [
 	"width"				=> "340px",
 	"max-width"			=> "90%",
 	"margin"			=> "2em auto",
-	"padding"			=> "12px 15px",
-	"font-size"			=> "1em",
+	"padding"			=> "20px 30px",
+	"font-size"			=> "1.4em",
 	"border-radius"			=> "25px",
-	"border"			=> "3px solid ".$logo_color_primary,
+//	"border"			=> "3px solid ".$logo_color_primary,
 	"backdrop-filter"		=> "blur(10px)",
 	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.6) 15%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.3))",
 	"outline"			=> "none",
+
+	"border"			=> "5px solid",
+	"border-image-slice"		=> "1",
+	"border-image-source"		=> "linear-gradient(to left, ".$logo_color_primary.", ".$logo_color_secondary.")",
 	],
 
 ".body-tagline" => [
