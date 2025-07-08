@@ -6,6 +6,9 @@ $search_font = "'Helvetica'";
 $hashtag_heading_font = "Monoton, sans-serif";
 $hashtag_general_font = "'Rubik Mono One', sans-serif";
 
+$logo_color_primary = "rgba(30, 175, 200, 1)";
+$logo_color_secondary = "rgba(0, 15, 195, 1)";
+
 $css_array = [
 
 ":root"	=> [
@@ -51,7 +54,7 @@ $css_array = [
 //	"z-index"			=> "999",
 	"display"			=> "block",
 	"text-align"			=> "center",
-	"padding"			=> "1em 0",
+	"padding"			=> "1em",
 	],
 	
 ".header-logo" => [
@@ -62,7 +65,7 @@ $css_array = [
  	"font-size"			=> "1.8em",
 	"line-height"			=> "1.6em",
 	"font-weight"			=> "bold",
-	"background"			=> "linear-gradient(45deg,rgba(30, 175, 200, 1) 20%, rgba(0, 15, 195, 1))",
+	"background"			=> "linear-gradient(45deg, ".$logo_color_primary." 20%, ".$logo_color_secondary.")",
 	"-webkit-background-clip"	=> "text",
 	"color"				=> "transparent",
 	],
@@ -73,15 +76,16 @@ $css_array = [
 	],
 
 ".search-box" => [
-	"display"			=> "inline-block",
+	"display"			=> "block",
 	"font-family"			=> $search_font,
-	"float"				=> "right",
+//	"float"				=> "right",
 	"width"				=> "340px",
-	"margin"			=> "0 2em",
-	"padding"			=> "10px 12px",
+	"max-width"			=> "90%",
+	"margin"			=> "2em auto",
+	"padding"			=> "12px 15px",
 	"font-size"			=> "1em",
 	"border-radius"			=> "25px",
-	"border"			=> "2px solid rgba(255,255,255,0.6)",
+	"border"			=> "3px solid ".$logo_color_primary,
 	"backdrop-filter"		=> "blur(10px)",
 	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.6) 15%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.3))",
 	"outline"			=> "none",
@@ -97,6 +101,14 @@ $css_array = [
 	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
 	"-webkit-background-clip"	=> "text",
  	"color"				=> "transparent",
+	],
+
+".body-tagline-primary-color" => [
+	"color"				=> $logo_color_primary,
+	],
+
+".body-tagline-secondary-color" => [
+	"color"				=> $logo_color_secondary,
 	],
 
 ".body-tagline-description" => [
