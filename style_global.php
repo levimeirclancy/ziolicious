@@ -30,18 +30,30 @@ $css_array = [
 	"margin"			=> "0",
 	],
 
+// "header" => [
+//	"position"			=> "fixed",
+//	"top"				=> "0",
+//	"width"				=> "100%",
+//	"backdrop-filter"		=> "blur(10px)",
+//	"background"			=> "linear-gradient(110deg,rgba(235, 235, 235, 0.85) 20%, rgba(235, 235, 235, 0.2) 60%, rgba(245, 245, 245, 0.85))",
+//	"z-index"			=> "999",
+//	"display"			=> "block",
+//	"text-align"			=> "center",
+//	"padding"			=> "1em 0",
+//	],
+
 "header" => [
-	"position"			=> "fixed",
-	"top"				=> "0",
+//	"position"			=> "fixed",
+//	"top"				=> "0",
 	"width"				=> "100%",
-	"backdrop-filter"		=> "blur(10px)",
-	"background"			=> "linear-gradient(110deg,rgba(235, 235, 235, 0.85) 20%, rgba(235, 235, 235, 0.2) 60%, rgba(245, 245, 245, 0.85))",
-	"z-index"			=> "999",
+//	"backdrop-filter"		=> "blur(10px)",
+//	"background"			=> "linear-gradient(110deg,rgba(235, 235, 235, 0.85) 20%, rgba(235, 235, 235, 0.2) 60%, rgba(245, 245, 245, 0.85))",
+//	"z-index"			=> "999",
 	"display"			=> "block",
 	"text-align"			=> "center",
 	"padding"			=> "1em 0",
 	],
-
+	
 ".header-logo" => [
 	"display"			=> "inline-block",
 	"float"				=> "left",
