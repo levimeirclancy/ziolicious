@@ -96,6 +96,8 @@ $css_array = [
 	"border"			=> "5px solid",
 	"border-image-slice"		=> "1",
 	"border-image-source"		=> "linear-gradient(to left, ".$logo_color_primary.", ".$logo_color_secondary.")",
+	"background-origin"		=> "border-box",
+ 	"background-clip"		=> "content-box, border-box",
 	],
 
 ".body-tagline" => [
