@@ -106,13 +106,19 @@ $css_array = [
 // 	"color"				=> "transparent",
 	],
 
-".body-tagline-primary-color" => [
-	"color"				=> $logo_color_primary,
+".body-tagline-primary-color, .body-tagline-primary-color" => [
+	"background"			=> "linear-gradient(-200deg, ".$logo_color_primary." 40%, ".$logo_color_secondary.")",
+	"-webkit-background-clip"	=> "text",
+ 	"color"				=> "transparent",
 	],
 
-".body-tagline-secondary-color" => [
-	"color"				=> $logo_color_secondary,
-	],
+// ".body-tagline-primary-color" => [
+//	"color"				=> $logo_color_primary,
+//	],
+
+// ".body-tagline-secondary-color" => [
+//	"color"				=> $logo_color_secondary,
+//	],
 
 ".body-tagline-description" => [
 	"font-size"			=> "1.3em",
