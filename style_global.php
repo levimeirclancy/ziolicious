@@ -60,9 +60,10 @@ $css_array = [
 	],
 	
 ".header-logo" => [
-	"display"			=> "inline-block",
-	"float"				=> "left",
-	"margin"			=> "0 1em",
+	"display"			=> "block",
+	"text-align"			=> "left",
+//	"float"				=> "left",
+	"margin"			=> "0 1em 2em",
 	"font-family"			=> $heading_font,
  	"font-size"			=> "1.8em",
 	"line-height"			=> "1.6em",
