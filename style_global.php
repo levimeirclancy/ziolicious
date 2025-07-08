@@ -78,26 +78,28 @@ $css_array = [
 	"color"				=> "inherit",
 	],
 
+".search-box-container" => [
+	"background"			=> "linear-gradient(-200deg, ".$logo_color_primary." 40%, ".$logo_color_secondary.")",
+	"border-radius"			=> "25px",
+	"padding"			=> "5px",
+	"width"				=> "450px",
+	"max-width"			=> "90%",
+	"display"			=> "block",
+	"margin"			=> "2em auto",
+	],
+	
 ".search-box" => [
 	"display"			=> "block",
 	"font-family"			=> $search_font,
 //	"float"				=> "right",
-	"width"				=> "340px",
-	"max-width"			=> "90%",
-	"margin"			=> "2em auto",
+	"width"				=> "auto",
 	"padding"			=> "20px 30px",
 	"font-size"			=> "1.4em",
 	"border-radius"			=> "25px",
 //	"border"			=> "3px solid ".$logo_color_primary,
-	"backdrop-filter"		=> "blur(10px)",
-	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.6) 15%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.3))",
+//	"backdrop-filter"		=> "blur(10px)",
+	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.9) 15%,rgba(255,255,255,0.7) 60%,rgba(255,255,255,0.8))",
 	"outline"			=> "none",
-
-	"border"			=> "5px solid",
-	"border-image-slice"		=> "1",
-	"border-image-source"		=> "linear-gradient(to left, ".$logo_color_primary.", ".$logo_color_secondary.")",
-	"background-origin"		=> "border-box",
- 	"background-clip"		=> "content-box, border-box",
 	],
 
 ".body-tagline" => [
