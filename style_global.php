@@ -6,13 +6,15 @@ $search_font = "'Helvetica'";
 $hashtag_heading_font = "Monoton, sans-serif";
 $hashtag_general_font = "'Rubik Mono One', sans-serif";
 
-$logo_color_primary = "rgba(30, 175, 200, 1)";
-$logo_color_secondary = "rgba(0, 15, 195, 1)";
+$dark_color		= "rgb(15,15,15)";
+$light_color		= "rgb(235,235,235)";
+$logo_color_primary	= "rgba(30, 175, 200, 1)";
+$logo_color_secondary	= "rgba(0, 15, 195, 1)";
 
 $css_array = [
 
 ":root"	=> [
-	"--bg"				=> "rgb(235,235,235)",
+	"--bg"				=> $light_color,
 	"--text"			=> "#111",
 	"--accent"			=> "#111",
 	],
@@ -98,9 +100,10 @@ $css_array = [
 	"text-align"			=> "center",
 	"Font-size"			=> "3em",
 	"font-family"			=> $heading_font,
-	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
-	"-webkit-background-clip"	=> "text",
- 	"color"				=> "transparent",
+	"color"				=> $dark_color,
+//	"background"			=> "linear-gradient(-200deg,rgba(30, 175, 200, 1) 40%, rgba(0, 15, 195, 0.8))",
+//	"-webkit-background-clip"	=> "text",
+// 	"color"				=> "transparent",
 	],
 
 ".body-tagline-primary-color" => [
