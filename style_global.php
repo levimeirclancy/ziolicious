@@ -100,7 +100,8 @@ $css_array = [
 	"border"			=> "0",
 //	"border"			=> "3px solid ".$logo_color_primary,
 //	"backdrop-filter"		=> "blur(10px)",
-	"background"			=> "linear-gradient(65deg,rgba(235,235,235,0.98) 15%,rgba(235,235,235,0.85) 60%,rgba(255,255,255,0.98))",
+//	"background"			=> "linear-gradient(65deg,rgba(235,235,235,0.98) 15%,rgba(235,235,235,0.85) 60%,rgba(255,255,255,0.98))",
+	"background"			=> "linear-gradient(65deg,rgba(235,235,235,1) 15%,rgba(235,235,235,1) 60%,rgba(255,255,255,1))",
 	"outline"			=> "none",
 	],
 
