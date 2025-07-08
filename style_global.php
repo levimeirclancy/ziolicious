@@ -92,6 +92,7 @@ $css_array = [
 	"display"			=> "block",
 	"font-family"			=> $search_font,
 //	"float"				=> "right",
+	"font"				=> $body_font,
 	"width"				=> "100%",
 	"padding"			=> "20px 30px",
 	"font-size"			=> "1.4em",
@@ -99,7 +100,7 @@ $css_array = [
 	"border"			=> "0",
 //	"border"			=> "3px solid ".$logo_color_primary,
 //	"backdrop-filter"		=> "blur(10px)",
-	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.9) 15%,rgba(255,255,255,0.7) 60%,rgba(255,255,255,0.8))",
+	"background"			=> "linear-gradient(65deg,rgba(255,255,255,0.98) 15%,rgba(255,255,255,0.7) 60%,rgba(255,255,255,0.98))",
 	"outline"			=> "none",
 	],
 
