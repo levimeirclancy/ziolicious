@@ -106,7 +106,7 @@ $css_array = [
 // 	"color"				=> "transparent",
 	],
 
-".body-tagline-primary-color, .body-tagline-primary-color" => [
+".body-tagline-primary-color, .body-tagline-secondary-color" => [
 	"background"			=> "linear-gradient(-200deg, ".$logo_color_primary." 40%, ".$logo_color_secondary.")",
 	"-webkit-background-clip"	=> "text",
  	"color"				=> "transparent",
