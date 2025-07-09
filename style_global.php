@@ -98,10 +98,14 @@ $css_array = [
 	"font-size"			=> "1.4em",
 	"border-radius"			=> "50px",
 	"border"			=> "0",
-//	"border"			=> "3px solid ".$logo_color_primary,
-//	"backdrop-filter"		=> "blur(10px)",
-//	"background"			=> "linear-gradient(65deg,rgba(235,235,235,0.98) 15%,rgba(235,235,235,0.85) 60%,rgba(255,255,255,0.98))",
-	"background"			=> "linear-gradient(65deg,rgba(235,235,235,1) 15%,rgba(235,235,235,1) 60%,rgba(255,255,255,1))",
+	"text-align"			=> "center",
+//	"background"			=> "linear-gradient(65deg,rgba(235,235,235,1) 15%,rgba(235,235,235,1) 60%,rgba(255,255,255,1))",
+
+	"background"			=> "linear-gradient(-200deg, ".$logo_color_primary." 40%, ".$logo_color_secondary.")",
+	"-webkit-background-clip"	=> "text",
+ 	"color"				=> "transparent",
+
+	
 	"outline"			=> "none",
 	],
 
