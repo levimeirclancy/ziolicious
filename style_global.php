@@ -90,9 +90,8 @@ $css_array = [
 	
 ".search-box" => [
 	"display"			=> "block",
-	"font-family"			=> $search_font,
+	"font-family"			=> $heading_font,
 //	"float"				=> "right",
-	"font"				=> $body_font,
 	"width"				=> "100%",
 	"padding"			=> "20px 30px",
 	"font-size"			=> "1.4em",
@@ -103,6 +102,10 @@ $css_array = [
 	"outline"			=> "none",
 	],
 
+".search-box::placeholder" => [
+	"opacity"			=> "1",
+	]
+	
 ".body-tagline" => [
 	"display"			=> "block",
 	"max-width"			=> "400px",
