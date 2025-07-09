@@ -99,13 +99,7 @@ $css_array = [
 	"border-radius"			=> "50px",
 	"border"			=> "0",
 	"text-align"			=> "center",
-//	"background"			=> "linear-gradient(65deg,rgba(235,235,235,1) 15%,rgba(235,235,235,1) 60%,rgba(255,255,255,1))",
-
-	"background"			=> "linear-gradient(-200deg, ".$logo_color_primary." 40%, ".$logo_color_secondary.")",
-	"-webkit-background-clip"	=> "text",
- 	"color"				=> "transparent",
-
-	
+//	"background"			=> "linear-gradient(65deg,rgba(235,235,235,1) 15%,rgba(235,235,235,1) 60%,rgba(255,255,255,1))",	
 	"outline"			=> "none",
 	],
 
