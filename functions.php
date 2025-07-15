@@ -34,11 +34,14 @@ function html_begin ($title="Ziolicious", $style_array = []) {
 	
 	$html_temp .= '<header>';
 	$html_temp .= '<span class="header-logo"><a href="/testing/">Ziolicious</a></span>';
+	$html_temp .= '</header>';
+
+	$html_temp .= '<nav>';
 	$html_temp .= '<div class="search-box-container">';
 		$html_temp .= '<input class="search-box" type="text" placeholder="&#x1F50D;  Search">';
 		$html_temp .= '</div>';
-	$html_temp .= '</header>';
-
+	$html_temp .= '</nav>';
+	
 	return $html_temp; }
 
 
